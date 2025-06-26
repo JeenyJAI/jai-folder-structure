@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=70.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jai-folder-structure"
+version = "1.0.0"
+description = "Python library for analyzing and visualizing directory structures with multiple output formats, filtering, and ZIP archive creation"
+readme = "README.md"
+authors = [
+    {name = "JeenyJAI", email = "JeenyJAI@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/JeenyJAI/jai-folder-structure"
+Issues = "https://github.com/JeenyJAI/jai-folder-structure/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
